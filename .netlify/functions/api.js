@@ -5,8 +5,8 @@ const { Octokit } = require("@octokit/rest");
 // Commit info
 const REPO_NAME = "TemplateOnlineExperiment"
 const REPO_OWNER = "RealityBending" // update this to use "RealityBending"
-const AUTHOR_EMAIL = "dom.mak19@gmail.com" // update this to committer/author email
-const REPO_BRANCH = "main"
+const AUTHOR_EMAIL = "phamttam17@gmail.com" // update this to committer/author email
+//const REPO_BRANCH = "main"
 
 exports.handler = async (event, context) => {
     // content should be a dictionary with two attributes: 'path' and 'data'
@@ -24,7 +24,7 @@ exports.handler = async (event, context) => {
         content: Buffer.from(content.data).toString('base64'),
         message: `Saving ${content.path}`,
         path: content.path,
-        branch: REPO_BRANCH,
+        //branch: REPO_BRANCH,
         committer: {
             name: "REBEL",
             email: "",
