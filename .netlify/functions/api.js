@@ -27,7 +27,7 @@ exports.handler = async (event, context) => {
         //branch: REPO_BRANCH,
         committer: {
             name: "REBEL",
-            email: "",
+            email: AUTHOR_EMAIL,
         },
         author: {
             name: "REBEL",
